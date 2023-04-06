@@ -3,14 +3,20 @@
 #+OPTIONS: toc:nil num:nil
 
 * Introduction to Testing Techniques (5 min)
-  - Explanation of mutation testing, property-based testing, and unit testing.
-  - How these techniques complement each other.
 
 #+ATTR_ORG: :width 200
 #+CAPTION: Puzzle pieces fitting together representing different testing techniques
 [[file:images/testing-techniques-puzzle-pieces.jpg]]
 
+  - Explanation of mutation testing, property-based testing, and unit testing.
+  - How these techniques complement each other.
+
 * Mutation Testing with PIT (Java & Kotlin) (10 min)
+
+#+ATTR_ORG: :width 200
+#+CAPTION: DNA strands with mutations representing code mutation testing
+[[file:images/dna-strands-code-mutation-testing.jpg]]
+
   - Introduction to PIT and its features.
   - Code Example: Calculator (Java)
     #+BEGIN_SRC java
@@ -31,11 +37,12 @@
     }
     #+END_SRC
 
-#+ATTR_ORG: :width 200
-#+CAPTION: DNA strands with mutations representing code mutation testing
-[[file:images/dna-strands-code-mutation-testing.jpg]]
-
 * Mutation Testing with MutPy (Python) (10 min)
+
+#+ATTR_ORG: :width 200
+#+CAPTION: Two-faced character representing string reversal
+[[file:images/two-faced-character-string-reversal.jpg]]
+
   - Introduction to MutPy and its features.
   - Code Example: String Reversal (Python)
     #+BEGIN_SRC python
@@ -43,11 +50,12 @@
         return s[::-1]
     #+END_SRC
 
-#+ATTR_ORG: :width 200
-#+CAPTION: Two-faced character representing string reversal
-[[file:images/two-faced-character-string-reversal.jpg]]
-
 * Property-Based Testing with Hypothesis (Python) (10 min)
+
+#+ATTR_ORG: :width 200
+#+CAPTION: Laboratory flask with a variety of random inputs
+[[file:images/laboratory-flask-random-inputs.jpg]]
+
   - Introduction to Hypothesis and its features.
   - Code Example: List Reversal (Python)
     #+BEGIN_SRC python
@@ -59,11 +67,12 @@
         assert xs == list(reversed(reversed(xs)))
     #+END_SRC
 
-#+ATTR_ORG: :width 200
-#+CAPTION: Laboratory flask with a variety of random inputs
-[[file:images/laboratory-flask-random-inputs.jpg]]
-
 * Contract Programming in Racket (Scheme) (10 min)
+
+#+ATTR_ORG: :width 200
+#+CAPTION: Handshake representing a formal agreement (contract)
+[[file:images/handshake-formal-agreement-contract.jpg]]
+
   - Introduction to contract programming in Racket.
   - Code Example: Contracts for Functions (Racket)
     #+BEGIN_SRC racket
@@ -71,12 +80,13 @@
       (-> number? number? number?)
       (+ a b))
     #+END_SRC
-  
-#+ATTR_ORG: :width 200
-#+CAPTION: Handshake representing a formal agreement (contract)
-[[file:images/handshake-formal-agreement-contract.jpg]]
 
 * clojure.spec and test.check (Clojure) (10 min)
+
+#+ATTR_ORG: :width 200
+#+CAPTION: Checkerboard representing test.check testing and validation
+[[file:images/checkerboard-test-check-validation.jpg]]
+
   - Introduction to clojure.spec and test.check.
   - Code Example: Specifying Data and Functions (Clojure)
     #+BEGIN_SRC clojure
@@ -94,48 +104,47 @@
                                   (= (reverse (reverse v)) v)))
     #+END_SRC
 
-#+ATTR_ORG: :width 200
-#+CAPTION: Checkerboard representing test.check testing and validation
-[[file:images/checkerboard-test-check-validation.jpg]]
-
 * Standard Unit Testing (5 min)
-
-  - Explanation of unit testing and its purpose.
-
-        Code Example: Factorial Function (Python)
-        #+BEGIN_SRC python
-        import unittest
-
-        def factorial(n):
-        return 1 if n == 0 else n * factorial(n - 1)
-
-        class FactorialTest(unittest.TestCase):
-        def test_factorial(self):
-        self.assertEqual(factorial(5), 120)
-        self.assertEqual(factorial(0), 1)
-
-        if name == 'main':
-        unittest.main()
-        #+END_SRC
 
 #+ATTR_ORG: :width 200
 #+CAPTION: Magnifying glass over code representing unit testing
 [[file:images/magnifying-glass-code-unit-testing.jpg]]
 
+  - Explanation of unit testing and its purpose.
+
+  - Code Example: Factorial Function (Python)
+    #+BEGIN_SRC python
+    import unittest
+
+    def factorial(n):
+    return 1 if n == 0 else n * factorial(n - 1)
+
+    class FactorialTest(unittest.TestCase):
+    def test_factorial(self):
+    self.assertEqual(factorial(5), 120)
+    self.assertEqual(factorial(0), 1)
+
+    if name == 'main':
+    unittest.main()
+    #+END_SRC
+
 * Comparison and Synergy of Techniques (5 min)
-    - Comparing mutation testing, property-based testing, contract programming, and unit testing.
-    - Advantages and limitations of each approach.
 
 #+ATTR_ORG: :width 200
 #+CAPTION: Scales balancing different testing techniques
 [[file:images/scales-balancing-testing-techniques.jpg]]
 
+  - Comparing mutation testing, property-based testing, contract programming, and unit testing.
+  - Advantages and limitations of each approach.
+
 * Conclusion and Q&A (5 min)
-    - Recap of key points and takeaways.
-    - Open the floor for questions and discussion.
 
 #+ATTR_ORG: :width 200
 #+CAPTION: Summary book or a lightbulb representing key takeaways
 [[file:images/summary-book-lightbulb-key-takeaways.jpg]]
+
+  - Recap of key points and takeaways.
+  - Open the floor for questions and discussion.
+
 
 
