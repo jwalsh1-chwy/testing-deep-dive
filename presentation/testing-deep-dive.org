@@ -45,7 +45,7 @@
 
 #+ATTR_ORG: :width 200
 #+CAPTION: Two-faced character representing string reversal
-[[file:two-faced-character-string-reversal.jpg]]
+[[file:images/two-faced-character-string-reversal.jpg]]
 
 * Property-Based Testing with Hypothesis (Python) (10 min)
   - Introduction to Hypothesis and its features.
