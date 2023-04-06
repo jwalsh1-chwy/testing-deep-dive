@@ -20,21 +20,21 @@
   - Introduction to PIT and its features.
   - Code Example: Calculator (Java)
     #+BEGIN_SRC java
-    public class Calculator {
-        public int add(int a, int b) {
-            return a + b;
-        }
-        // ... More methods
-    }
+      public class Calculator {
+	  public int add(int a, int b) {
+	      return a + b;
+	  }
+	  // ... More methods
+      }
     #+END_SRC
   - Code Example: Temperature Converter (Kotlin)
     #+BEGIN_SRC kotlin
-    class TemperatureConverter {
-        fun celsiusToFahrenheit(celsius: Double): Double {
-            return (celsius * 9.0 / 5.0) + 32.0;
-        }
-        // ... More methods
-    }
+      class TemperatureConverter {
+	  fun celsiusToFahrenheit(celsius: Double): Double {
+	      return (celsius * 9.0 / 5.0) + 32.0;
+	  }
+	  // ... More methods
+      }
     #+END_SRC
 
 * Mutation Testing with MutPy (Python) (10 min)
@@ -46,8 +46,8 @@
   - Introduction to MutPy and its features.
   - Code Example: String Reversal (Python)
     #+BEGIN_SRC python
-    def reverse_string(s):
-        return s[::-1]
+      def reverse_string(s):
+	  return s[::-1]
     #+END_SRC
 
 * Property-Based Testing with Hypothesis (Python) (10 min)
@@ -59,12 +59,12 @@
   - Introduction to Hypothesis and its features.
   - Code Example: List Reversal (Python)
     #+BEGIN_SRC python
-    from hypothesis import given
-    import hypothesis.strategies as st
+      from hypothesis import given
+      import hypothesis.strategies as st
 
-    @given(st.lists(st.integers()))
-    def test_reverse_list(xs):
-        assert xs == list(reversed(reversed(xs)))
+      @given(st.lists(st.integers()))
+      def test_reverse_list(xs):
+	  assert xs == list(reversed(reversed(xs)))
     #+END_SRC
 
 * Contract Programming in Racket (Scheme) (10 min)
@@ -75,10 +75,10 @@
 
   - Introduction to contract programming in Racket.
   - Code Example: Contracts for Functions (Racket)
-    #+BEGIN_SRC racket
-    (define/contract (add a b)
-      (-> number? number? number?)
-      (+ a b))
+    #+BEGIN_SRC scheme
+      (define/contract (add a b)
+	(-> number? number? number?)
+	(+ a b))
     #+END_SRC
 
 * clojure.spec and test.check (Clojure) (10 min)
@@ -90,18 +90,18 @@
   - Introduction to clojure.spec and test.check.
   - Code Example: Specifying Data and Functions (Clojure)
     #+BEGIN_SRC clojure
-    (require '[clojure.spec.alpha :as s])
+      (require '[clojure.spec.alpha :as s])
 
-    (s/def ::age (s/int-in 0 150))
-    (s/def ::person (s/keys :req-un [::age]))
+      (s/def ::age (s/int-in 0 150))
+      (s/def ::person (s/keys :req-un [::age]))
     #+END_SRC
   - Code Example: Property-Based Testing with test.check (Clojure)
     #+BEGIN_SRC clojure
-    (require '[clojure.test.check :refer [quick-check]])
-    (require '[clojure.test.check.generators :as gen])
+      (require '[clojure.test.check :refer [quick-check]])
+      (require '[clojure.test.check.generators :as gen])
 
-    (quick-check 100 (prop/for-all [v (gen/vector gen/int)]
-                                  (= (reverse (reverse v)) v)))
+      (quick-check 100 (prop/for-all [v (gen/vector gen/int)]
+				     (= (reverse (reverse v)) v)))
     #+END_SRC
 
 * Standard Unit Testing (5 min)
@@ -114,18 +114,18 @@
 
   - Code Example: Factorial Function (Python)
     #+BEGIN_SRC python
-    import unittest
+      import unittest
 
-    def factorial(n):
-    return 1 if n == 0 else n * factorial(n - 1)
+      def factorial(n):
+	  return 1 if n == 0 else n * factorial(n - 1)
 
-    class FactorialTest(unittest.TestCase):
-    def test_factorial(self):
-    self.assertEqual(factorial(5), 120)
-    self.assertEqual(factorial(0), 1)
+      class FactorialTest(unittest.TestCase):
+	  def test_factorial(self):
+	      self.assertEqual(factorial(5), 120)
+	      self.assertEqual(factorial(0), 1)
 
-    if name == 'main':
-    unittest.main()
+      if name == 'main':
+	  unittest.main()
     #+END_SRC
 
 * Comparison and Synergy of Techniques (5 min)
