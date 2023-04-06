@@ -1,0 +1,45 @@
+#+TITLE: In-Depth Look at Mutation Testing, Property-Based Testing, and Unit Testing
+#+AUTHOR: ChatGPT
+#+OPTIONS: toc:nil num:nil
+
+* Introduction to Testing Techniques (5 min)
+  - Explanation of mutation testing, property-based testing, and unit testing.
+  - How these techniques complement each other.
+
+* Mutation Testing with PIT (Java & Kotlin) (10 min)
+  - Introduction to PIT and its features.
+  - Code Example: Calculator (Java)
+  - Code Example: Temperature Converter (Kotlin)
+
+* Mutation Testing with MutPy (Python) (10 min)
+  - Introduction to MutPy and its features.
+  - Code Example: String Reversal (Python)
+
+* Property-Based Testing with Hypothesis (Python) (10 min)
+  - Introduction to Hypothesis and its features.
+  - Code Example: List Reversal (Python)
+
+* Contract Programming in Racket (Scheme) (10 min)
+  - Introduction to contract programming in Racket.
+  - Code Example: Contracts for Functions (Racket)
+
+* clojure.spec and test.check (Clojure) (10 min)
+  - Introduction to clojure.spec and test.check.
+  - Code Example: Specifying Data and Functions (Clojure)
+  - Code Example: Property-Based Testing with test.check (Clojure)
+
+* Standard Unit Testing (5 min)
+  - Explanation of unit testing and its purpose.
+  - Code Example: Factorial Function (Python)
+
+* Comparison and Synergy of Techniques (5 min)
+  - Comparing mutation testing, property-based testing, contract programming, and unit testing.
+  - Advantages and limitations of each approach.
+
+* Conclusion and Q&A (5 min)
+  - Recap of key points and takeaways.
+  - Open the floor for questions and discussion.
+
+* Thank You
+  - Thank you for attending this comprehensive presentation on testing techniques.
+  - We hope you found the content and code examples informative and practical.
